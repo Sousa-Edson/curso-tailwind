@@ -48,13 +48,37 @@ O cabeçalho contém um logo e links de navegação:
 
 ```html
 <div class="container max-w-5xl mx-auto px-4 h-24 flex items-center">
-    <div class="font-black">LOGO</div>
-    <ul class="ml-auto flex space-x-4">
-        <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a></li>
-        <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a></li>
-        <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a></li>
-        <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a></li>
-    </ul>
+  <div class="font-black">LOGO</div>
+  <ul class="ml-auto flex space-x-4">
+    <li>
+      <a
+        href=""
+        class="text-sm text-gray-600 hover:text-gray-800 hover:underline"
+        >Como reservar</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-sm text-gray-600 hover:text-gray-800 hover:underline"
+        >Sobre nós</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-sm text-gray-600 hover:text-gray-800 hover:underline"
+        >Informações</a
+      >
+    </li>
+    <li>
+      <a
+        href=""
+        class="text-sm text-gray-600 hover:text-gray-800 hover:underline"
+        >Contato</a
+      >
+    </li>
+  </ul>
 </div>
 ```
 
@@ -64,29 +88,53 @@ O banner possui uma imagem de fundo e um formulário de pesquisa:
 
 ```html
 <div style="background: url('./img/hero-image-1.png');height: 450px;">
-    <div class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center">
-        <div>
-            <div class="text-center">
-                <h1 class="text-gray-200 text-3xl mb-1">Onde você quer ir?</h1>
-                <p class="text-green-50">Escolha o estado e cidade para achar os melhores resorts.</p>
-            </div>
-            <div class="mt-7">
-                <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                    <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
-                        <option value="">Escolha o estado</option>
-                    </select>
-                    <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
-                        <option value="">Escolha a cidade</option>
-                    </select>
-                    <button class="col-span-2 lg:col-span-1 inline-flex items-center justify-center text-yellow-900 bg-yellow-500 font-medium px-4 py-2 rounded">
-                        <svg class="w-4 h-4 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
-                        </svg> Pesquisar resorts
-                    </button>
-                </form>
-            </div>
-        </div>
+  <div
+    class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center"
+  >
+    <div>
+      <div class="text-center">
+        <h1 class="text-gray-200 text-3xl mb-1">Onde você quer ir?</h1>
+        <p class="text-green-50">
+          Escolha o estado e cidade para achar os melhores resorts.
+        </p>
+      </div>
+      <div class="mt-7">
+        <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <select
+            class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500"
+          >
+            <option value="">Escolha o estado</option>
+          </select>
+          <select
+            class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500"
+          >
+            <option value="">Escolha a cidade</option>
+          </select>
+          <button
+            class="col-span-2 lg:col-span-1 inline-flex items-center justify-center text-yellow-900 bg-yellow-500 font-medium px-4 py-2 rounded"
+          >
+            <svg
+              class="w-4 h-4 mr-2"
+              data-slot="icon"
+              fill="none"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              ></path>
+            </svg>
+            Pesquisar resorts
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 ```
 
@@ -96,28 +144,57 @@ Seção com detalhes de um resort em destaque:
 
 ```html
 <div class="container max-w-5xl mx-auto px-4 py-20">
-    <div class="flex flex-col-reverse lg:flex-row">
-        <div class="lg:pr-10">
-            <div class="text-sm text-gray-400 font-medium">RESORT EM DESTAQUE</div>
-            <div class="text-2xl">Ecoresort Praia do Forte Bahia</div>
-            <div class="text-sm text-gray-400 font-medium mt-2">Hotel qualidade 5 estrelas</div>
-            <div class="text-sm text-gray-400 font-medium mt-4">
-                <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam in, quae repellendus libero eum consectetur. Fuga aperiam voluptatibus hic ab illo culpa, eaque, nesciunt, aspernatur ut cum incidunt nam suscipit.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam in, quae repellendus libero eum consectetur. Fuga aperiam voluptatibus hic ab illo culpa, eaque, nesciunt, aspernatur ut cum incidunt nam suscipit.</p>
-            </div>
-            <div class="mt-4">
-                <a class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
-                    Solicitar reserva
-                    <svg class="h-4 w-4 ml-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="flex-shrink-0 lg:ml-auto mb-5 lg:mb-0 rounded-sm overflow-hidden">
-            <img src="./img/featured-img.png" alt="" class="w-full">
-        </div>
+  <div class="flex flex-col-reverse lg:flex-row">
+    <div class="lg:pr-10">
+      <div class="text-sm text-gray-400 font-medium">RESORT EM DESTAQUE</div>
+      <div class="text-2xl">Ecoresort Praia do Forte Bahia</div>
+      <div class="text-sm text-gray-400 font-medium mt-2">
+        Hotel qualidade 5 estrelas
+      </div>
+      <div class="text-sm text-gray-400 font-medium mt-4">
+        <p class="mb-4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+          in, quae repellendus libero eum consectetur. Fuga aperiam voluptatibus
+          hic ab illo culpa, eaque, nesciunt, aspernatur ut cum incidunt nam
+          suscipit.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+          in, quae repellendus libero eum consectetur. Fuga aperiam voluptatibus
+          hic ab illo culpa, eaque, nesciunt, aspernatur ut cum incidunt nam
+          suscipit.
+        </p>
+      </div>
+      <div class="mt-4">
+        <a
+          class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded"
+        >
+          Solicitar reserva
+          <svg
+            class="h-4 w-4 ml-2"
+            data-slot="icon"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            ></path>
+          </svg>
+        </a>
+      </div>
     </div>
+    <div
+      class="flex-shrink-0 lg:ml-auto mb-5 lg:mb-0 rounded-sm overflow-hidden"
+    >
+      <img src="./img/featured-img.png" alt="" class="w-full" />
+    </div>
+  </div>
 </div>
 ```
 
@@ -127,31 +204,77 @@ Uma grade com vários resorts:
 
 ```html
 <div class="container max-w-5xl mx-auto px-4">
-    <div>
-        <h3 class="text-2xl text-gray-500 font-semibold text-center mb-8">Conheça mais resorts</h3>
-        <div class="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-6 space-y-6 md:space-y-0">
-            <div class="relative lg:col-span-2 lg:row-span-2 rounded-md overflow-hidden">
-                <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">Beach Park resort</div>
-                <img src="./img/image-shadow.png" alt="" class="absolute bottom-0 left-0 right-0 h-20 z-10">
-                <img src="./img/hotel-1.jpeg" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="relative md:col-span-2 md:h-60 rounded-md overflow-hidden">
-                <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">Salinas do Maragogi Resort</div>
-                <img src="./img/image-shadow.png" alt="" class="absolute bottom-0 left-0 right-0 h-20 z-10">
-                <img src="./img/hotel-2.jpeg" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="relative rounded-md overflow-hidden">
-                <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">Grand Palladium</div>
-                <img src="./img/image-shadow.png" alt="" class="absolute bottom-0 left-0 right-0 h-20 z-10">
-                <img src="./img/hotel-3.jpeg" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="relative rounded-md overflow-hidden">
-                <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">Arraial d' Ajuda Eco Resort</div>
-                <img src="./img/image-shadow.png" alt="" class="absolute bottom-0 left-0 right-0 h-20 z-10">
-                <img src="./img/hotel-4.jpeg" alt="" class="w-full h-full object-cover">
-            </div>
+  <div>
+    <h3 class="text-2xl text-gray-500 font-semibold text-center mb-8">
+      Conheça mais resorts
+    </h3>
+    <div
+      class="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-6 space-y-6 md:space-y-0"
+    >
+      <div
+        class="relative lg:col-span-2 lg:row-span-2 rounded-md overflow-hidden"
+      >
+        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+          Beach Park resort
         </div>
+        <img
+          src="./img/image-shadow.png"
+          alt=""
+          class="absolute bottom-0 left-0 right-0 h-20 z-10"
+        />
+        <img
+          src="./img/hotel-1.jpeg"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="relative md:col-span-2 md:h-60 rounded-md overflow-hidden">
+        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+          Salinas do Maragogi Resort
+        </div>
+        <img
+          src="./img/image-shadow.png"
+          alt=""
+          class="absolute bottom-0 left-0 right-0 h-20 z-10"
+        />
+        <img
+          src="./img/hotel-2.jpeg"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="relative rounded-md overflow-hidden">
+        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+          Grand Palladium
+        </div>
+        <img
+          src="./img/image-shadow.png"
+          alt=""
+          class="absolute bottom-0 left-0 right-0 h-20 z-10"
+        />
+        <img
+          src="./img/hotel-3.jpeg"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="relative rounded-md overflow-hidden">
+        <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+          Arraial d' Ajuda Eco Resort
+        </div>
+        <img
+          src="./img/image-shadow.png"
+          alt=""
+          class="absolute bottom-0 left-0 right-0 h-20 z-10"
+        />
+        <img
+          src="./img/hotel-4.jpeg"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
     </div>
+  </div>
 </div>
 ```
 
@@ -161,7 +284,121 @@ Um formulário de pesquisa adicional para encontrar resorts:
 
 ```html
 <div class="py-20">
-    <div class="container max-w-5xl mx-auto px-4 flex justify-center">
-        <form class="space-x-4">
-            <select class="bg-gray-50 px-3
+  <div class="container max-w-5xl mx-auto px-4 flex justify-center">
+    <form class="space-x-4">
+      <select class="bg-gray-50 px-3
+      <select
+        class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500"
+      >
+        <option value="">Escolha o estado</option>
+      </select>
+      <select
+        class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500"
+      >
+        <option value="">Escolha a cidade</option>
+      </select>
+      <button
+        class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded"
+      >
+        <svg
+          class="w-4 h-4 mr-2"
+          data-slot="icon"
+          fill="none"
+          stroke-width="1.5"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          ></path>
+        </svg>
+        Pesquisar resorts
+      </button>
+    </form>
+  </div>
+</div>
 
+            <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                <option value="">Escolha o estado</option>
+            </select>
+            <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                <option value="">Escolha a cidade</option>
+            </select>
+            <button class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
+                <svg class="w-4 h-4 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                </svg> Pesquisar resorts
+            </button>
+        </form>
+    </div>
+</div>
+```
+
+### Footer
+
+O rodapé da página com o logo e links para redes sociais:
+
+```html
+<div class="border-t border-gray-200">
+  <div
+    class="container max-w-5xl mx-auto px-4 py-4 flex items-center justify-between"
+  >
+    <div class="text-gray-400 font-black">LOGO</div>
+    <div class="flex items-center space-x-3">
+      <a href=""><img src="./img/icon-facebook.png" alt="Facebook" /></a>
+      <a href=""><img src="./img/icon-instagram.png" alt="Instagram" /></a>
+    </div>
+  </div>
+</div>
+```
+
+## Estilos Customizados
+
+Os estilos personalizados foram criados usando classes utilitárias do TailwindCSS. Certifique-se de incluir o arquivo `output.css` no seu projeto para que esses estilos sejam aplicados corretamente.
+
+## Instalação do TailwindCSS
+
+Para instalar e configurar o TailwindCSS no seu projeto, siga os passos abaixo:
+
+1. **Instale o TailwindCSS via npm:**
+
+   ```bash
+   npm install -D tailwindcss
+   ```
+
+2. **Crie o arquivo de configuração do TailwindCSS:**
+
+   ```bash
+   npx tailwindcss init
+   ```
+
+3. **Configure o arquivo `tailwind.config.js`:**
+
+   ```js
+   module.exports = {
+     content: ["./*.html"],
+     theme: {
+       extend: {},
+     },
+     plugins: [],
+   };
+   ```
+
+4. **Crie o arquivo CSS de entrada e configure o TailwindCSS:**
+
+   ```css
+   /* input.css */
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
+
+5. **Compile o TailwindCSS:**
+
+   ```bash
+   npx tailwindcss -i ./input.css -o ./output.css --watch
+   ```
