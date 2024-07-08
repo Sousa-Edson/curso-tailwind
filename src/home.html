@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="  bg-gray-500 text-gray-600">
+<body class="  bg-gray-50 text-gray-600">
     <!-- header -->
     <div>
         <div class="container mx-auto px-4 h-24 flex items-center ">
@@ -57,7 +57,7 @@
     <!-- /banner -->
     <!-- featured resort -->
     <div>
-        <div class="container ms-auto px-4 py-10">
+        <div class="container ms-auto px-4 py-20">
             <div class="flex">
                 <div class=" pr-10">
                     <div class="text-sm text-gray-400 font-medium">RESORT EM DESTAQUE</div>
@@ -133,7 +133,42 @@
             </div>
         </div>
         <!-- /resort grid-->
-        <br><br><br><br><br>
+        <!-- form search -->
+        <div class="py-20">
+            <div class="container mx-auto px-4 flex justify-center">
+                <form class="space-x-4">
+                    <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                        <option value="">Escolha o estado</option>
+                    </select>
+                    <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                        <option value="">Escolha a cidade</option>
+                    </select>
+                    <button
+                        class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3  py-2 rounded">
+                        <svg class="w-4 h-4 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z">
+                            </path>
+                        </svg> Pesquisar
+                        resorts</button>
+                </form>
+            </div>
+        </div>
+        <!-- /form search -->
+        <!-- footer -->
+        <div class="border-t border-gray-200">
+            <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+                <div class=" text-gray-400 font-black">LOGO</div>
+                <div class="flex items-center space-x-3">
+                    <a href=""> <img src="./img/icon-facebook.png" alt=""></a>
+                    <a href=""> <img src="./img/icon-instagram.png" alt=""></a>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- /footer -->
 </body>
 
 </html>
